@@ -1,0 +1,1454 @@
+/*----ALL----*/
+@import url('https://fonts.googleapis.com/css?family=Poppins|Piedra&display=swap');
+
+:root {
+	--primaryColor: #242424;
+	--mainWhite: #fff;
+	--mainBlack: #222;
+	--mainGrey: #ececec;
+	--mainSpacing: 0.1rem;
+	--mainTransition: all 0.3s linear;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background: #F4F3F3;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+label.logo {
+	color: #fff;
+	font-size: 24px;
+	line-height: 80px;
+	padding: 0 100px;
+	transition: 0.3s;
+	text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	transition: .3s;
+	background: #3161A3;
+	z-index: 2;
+}
+
+nav.black{
+	background: rgba(0,0,0,0.8);
+	height: 80px;
+}
+
+
+nav.black {
+	color: #fff;
+}
+
+nav.black ,menu {
+	color: #fff;
+}
+
+nav ul {
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a {
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: .5s;
+}
+
+nav ul li a.active,a:hover {
+	color: #fff;
+	background: #2196F3;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+nav.black ul li a {
+	color: #fff;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.headersmp {
+	padding-top: 80px;
+	transition: .3s;
+	justify-content: center;
+	display: flex;
+	background: #0F0A3C;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100%;
+	height: 140px;
+}
+
+.headersmp p {
+	margin-top: 10px;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Piedra', cursive;
+}
+
+/* header */ 
+.header-info {
+	margin-top: 2rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+.header-info-text {
+	display: flex;
+	flex-direction: row;
+}
+
+.header-info-content {
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+}
+
+.header-info-content .email {
+	border-right: 1px solid #919191;
+}
+
+.header-info-content .locs {
+	border-left: 1px solid #919191;
+}
+
+.wrap {
+	width: 170px;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.email, .phone, .locs {
+	cursor: pointer;
+}
+
+.dropdown-phone {
+	text-align: center;
+	height: 10px;
+}
+
+.dropdown-menu {
+	cursor: text;
+}
+
+.logosmp {
+	transform: perspective(500px) rotateY(0deg);
+	transform-style: preserve-3d; 
+	transition: 2s;
+}
+
+.logosmp:hover{
+	transform: perspective(500px) rotateY(360deg);
+}
+
+.logojateng {
+	width: 150px; 
+	height: 180px;
+	transform: perspective(500px) rotateY(0deg);
+	transform-style: preserve-3d; 
+	transition: 2s;
+}
+
+.logojateng .img-fluid {
+	height: 180px;
+}
+
+.logojateng:hover {
+	transform: perspective(500px) rotateY(360deg);
+}
+
+/*  */
+.slider-div {
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	transition: 2s;
+}
+
+/* courosel start / gambar gerak otomatis */
+.slider {
+	width: 100%;
+	margin: 100px auto;
+}
+
+.slick-slide {
+	margin: 0px 20px;
+}
+
+.slick-slide img {
+	width: 100%;
+	height: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+}
+
+.slick-next.slick-arrow{
+	color: #000;
+}
+
+
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: .2;
+}
+
+.slick-active {
+	opacity: .5;
+}
+
+.slick-current {
+	opacity: 1;
+}
+/* courosel end */
+
+/* prestasi start */
+
+.products {
+	padding: 4rem 0;
+  }
+  .btn-selengkapnya {
+	  margin-top: 30px;
+	  text-align: center;
+  }
+  .pageBreak{
+	  margin-top: 70px;
+	text-align: center;
+  }
+  .section-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+  }
+  .products-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  .products-center-kepsek {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-img {
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: var(--mainTransition);
+  }
+  .img-container:hover .product-img {
+    opacity: 0.5;
+  }
+
+  .product {
+	  border: 1px solid #D1D1D1;
+	  background: rgb(250, 253, 255);
+	  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+	  border-radius: 3px;
+	  
+  }
+  
+  .product h4 {  
+		width: 90%;
+		margin-left: 0.9rem;
+	  text-transform: capitalize;
+	  margin-top: 1rem;
+	  color: var(--primaryColor);
+	  text-align: center;
+	}
+	
+	.product p {
+		width: 90%;
+		margin-left: 0.9rem;
+		color: #828282;
+	  margin-top: 0.9rem;
+	  margin-bottom: 0.9rem;
+	  text-align: center;
+	}
+
+	.button {
+		border-radius: 4px;
+		background-color: #1eb0f4;
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 18px;
+		padding: 20px;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 5px;
+	  }
+	  
+	  .button span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	  }
+	  
+	  .button span:after {
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	  }
+	  .button:hover {
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14), 0 17px 50px 0 rgba(0,0,0,0.19);
+	  }
+	  
+	  .button:hover span {
+		padding-right: 25px;
+	  }
+	  
+	  .button:hover span:after {
+		opacity: 1;
+		right: 0;
+	  }
+
+/* prestasi end */
+/* detail prestasi start */
+.sticky{
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.headerPrestasi {
+	width: 100%;
+	height: 50px;
+	background-color: rgb(253, 253, 253);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 7px 50px 0 rgba(0,0,0,0.09);
+
+	padding: 20px 30px 50px 30px;
+}
+.headerPrestasi p {
+	font-size: 22px;
+	cursor: pointer;
+}
+/* detail prestasi end */
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.clr{
+	clear: both;
+}
+
+.footer-wrapper {
+	width: 100%;
+	height: auto;
+	min-height: 250px;
+	background: #1D1C1C;
+	padding-bottom: 30px;
+}
+
+.footer-mid-part{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+}
+
+.footer-section-one{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footer-section-two{
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.footer-section-three{
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.footer-heading{
+	width: 100%;
+}
+ 
+.footer-heading h2{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+.info-box{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.footer-info-box{
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-info-icon{
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+
+.footer-info-icon i{
+	color: #fff;
+	font-size: 20px;
+}
+
+.footer-info-text{
+	/* width: 85%; */
+	/* height: auto; */
+	/* float: left; */
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+
+.footer-info-text p{
+	font-size: 14px;
+	text-align: left;
+	color: #fff;
+	cursor: pointer;
+}
+
+.footer-info-text p a{
+	font-size: 14px;
+	text-align: left;
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-info-text p:hover{
+	color: #0682FF;
+}
+
+.footer-info-box:hover .footer-info-icon i{
+	color: #0682FF;
+}
+
+.footer-info-box:hover .footer-info-text p a{
+	color: #0682FF;
+}
+
+.footer-ikut-box{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ikut-content{
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-ikut-iconi{
+	width: 25px;
+	height: 25px;
+}
+
+.footer-ikut-iconi i{
+	color: #FB0D9C;
+	font-size: 20px;
+}
+
+.footer-ikut-iconf{
+	width: 25px;
+	height: 25px;
+}
+
+.footer-ikut-iconf i{
+	color: #0682FF;
+	font-size: 20px;
+}
+
+.footer-ikut-iconw{
+	width: 25px;
+	height: 25px;
+}
+
+.footer-ikut-iconw i{
+	color: #06FF10;
+	font-size: 20px;
+}
+
+.footer-ikut-icony{
+	width: 25px;
+	height: 25px;
+}
+
+.footer-ikut-icony i{
+	color: #FF0615;
+	font-size: 20px;
+}
+
+.footer-ikut-text{
+	margin-left: 10px;
+}
+
+.footer-ikut-text p{
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.footer-ikut-text p a{
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.ig:hover{
+	color: #FB0D9C;
+}
+.fb:hover{
+	color: #0682FF;
+}
+.wa:hover{
+	color: #06FF10;
+}
+.yt:hover{
+	color: #FF0615;
+}
+
+
+.footer-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-informasi-text{
+	width: 100%;
+	margin-top: 20px;
+
+}
+
+.footer-informasi-text p{
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.footer-informasi-text p a{
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-informasi-text p a:hover{
+	color: #0682FF;
+}
+
+.hr{
+	text-align: center;
+	width: 80%;
+	border: solid white 1px;
+	margin: 0 auto;
+}
+
+.tulisansmp{
+	text-align: center;
+	margin-top: 50px;
+	color: #fff;
+}
+
+.tulisansmp h3{
+	margin-top: 20px;
+}
+
+
+
+/*----HOME----*/
+
+
+
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	background: #001f44;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+/* responsive start */
+@media (max-width: 350px)
+{
+	.footer-section-one {
+		display: none;
+	}
+	.banner {
+		padding: 1rem;
+	}
+	.headersmp p {
+		font-size: 24px;
+	}
+	.banner-title h1, h2 {
+		font-size: large;
+		font-weight: bolder;
+	}
+	.products-center {
+		width: 90vw;
+		margin: 0 auto;
+		max-width: 1170px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+		grid-column-gap: 2rem;
+		grid-row-gap: 2rem;
+	  }
+
+	  label.input-daftar {
+		font-family: 'Helvetica', sans-serif;
+		font-size: 16px;
+		color: #333;
+		font-weight: 600;
+	}
+	
+	 input.input-daftar {
+		font-family: 'Helvetica', sans-serif;
+		padding: 10px 20px 10px 20px;
+		outline: none;
+		/* border-radius: 5px; */
+		border: none;
+		border-bottom : 1px solid #888;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 16px;
+		width: 100%;
+	 }
+	 #tanggal {
+		 width: 85%;
+	 }
+	 .table {
+		margin-left: -10px;
+	}
+
+	.imgright {
+		display: none;
+	}
+	.imgleft {
+		display: none;
+	}
+
+	.text {
+		align-self: center;
+	}
+}
+
+@media (max-width: 400px)
+{
+	.logosmp {
+		display: none;
+	}
+
+	.logojateng {
+		display: none;
+		transition: .3s;
+	}
+	.headerPrestasi .detail{
+		display: none;
+	}
+	.imgright {
+		display: none;
+	}
+	.imgleft {
+		display: none;
+	}
+
+	.text {
+		align-self: center;
+	}
+}
+
+@media (max-width: 484px)
+{
+	.header-info-content {
+		display: flex;
+		flex-direction: column;
+		width: 80px;
+	}
+	.logosmp .img-fluid {
+		width: 90px; 
+		height: 105px;
+	}
+
+	.logosmp {
+		width: 90px; 
+		height: 100px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+
+	}
+	
+	.logosmp:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+
+	.logojateng .img-fluid {
+		width: 80px; 
+		height: 105px;
+	}
+
+	.logojateng {
+		width: 90px; 
+		height: 100px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+	}
+	
+	.logojateng:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+	
+	.footer-section-three {
+		display: none;
+	}
+
+	th, td, tr {
+		font-size: 9px;
+	}
+	.imgright {
+		display: none;
+	}
+	.imgleft {
+		display: none;
+	}
+
+	.text {
+		align-self: center;
+	}
+}
+
+
+@media (max-width: 789px)
+{
+	.toggle{
+		display: block;
+	}
+
+	label.logo {
+		color: #fff;
+		font-size: 22px;
+		line-height: 80px;
+		padding: 0 50px;
+		transition: 0.3s;
+		text-transform: capitalize;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	nav ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #0F0A3C;
+		top: 80px;
+		left: -150%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 40px 0;
+		line-height: 30px;
+	}
+
+	nav ul li a {
+		font-size: 15px;
+	}
+
+	nav ul li a.active, a:hover {
+		background: none;
+		color: #0682FF;
+	}
+
+	#check:checked ~ ul {
+		left: 0;
+	}
+
+	.checkbtn {
+		display: block;
+	}
+
+	.headersmp {
+		padding-top: 80px;
+		width: 100%;
+		transition: .3s;
+	}
+
+	.slider-div {
+		width: 95%;
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+		transition: 2s;
+	}
+
+	.logosmp .img-fluid {
+		width: 90px; 
+		height: 105px;
+	}
+
+	.logosmp {
+		width: 90px; 
+		height: 100px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+	}
+	
+	.logosmp:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+
+	.logojateng .img-fluid {
+		width: 80px; 
+		height: 105px;
+	}
+
+	.logojateng {
+		width: 90px; 
+		height: 100px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+	}
+	
+	.logojateng:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+	.imgright {
+		display: none;
+	}
+
+	.text {
+		align-self: center;
+	}
+}
+
+
+@media (max-width: 960px)
+{
+	nav ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #0F0A3C;
+		top: 80px;
+		left: -150%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li {
+		display: block;
+	}
+
+	nav ul li a.active, a:hover {
+		background: none;
+		color: #0682FF;
+	}
+
+	#check:checked ~ ul {
+		left: 0;
+	}
+
+	.checkbtn {
+		display: block;
+	}
+
+	.text {
+		align-self: center;
+	}
+}
+
+@media (min-width: 790px)
+{
+	.slider-div {
+		width: 75%;
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		transition: 2s;
+	}
+
+	.logosmp .img-fluid {
+		width: 110px; 
+		height: 130px;
+	}
+
+	.logosmp {
+		width: 110px; 
+		height: 140px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+	}
+	
+	.logosmp:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+
+	.logojateng .img-fluid {
+		width: 105px; 
+		height: 135px;
+	}
+
+	.logojateng {
+		width: 110px; 
+		height: 140px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+	}
+	
+	.logojateng:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+}
+
+@media (max-width: 1089px)
+{
+	.imgright {
+		display: none;
+	}
+}
+
+@media (min-width: 1090px)
+{
+	.slider-div {
+		width: 64%;
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		transition: 2s;
+	}
+
+	.checkbtn {
+		font-size: 30px;
+		color: #fff;
+		float: right;
+		line-height: 80px;
+		margin-right: 40px;
+		cursor: pointer;
+		display: none;
+	}
+
+	.logosmp .img-fluid {
+		width: 150px; 
+		height: 180px;
+	}
+
+	.logosmp {
+		width: 150px; 
+		height: 180px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+	}
+	
+	.logosmp:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+
+	.logojateng .img-fluid {
+		width: 150px; 
+		height: 180px;
+	}
+
+	.logojateng {
+		width: 140px; 
+		height: 180px;
+		transform: perspective(500px) rotateY(0deg);
+		transform-style: preserve-3d; 
+		transition: 2s;
+	}
+	
+	.logojateng:hover{
+		transform: perspective(500px) rotateY(360deg);
+	}
+}
+/* responsive end */
+
+
+/*/----PRESTASI----*/
+
+.containerPrestasi {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 30px;
+}
+
+.prestasiRow {
+	display: flex;
+	flex-direction: row;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.prestasiKecamatan {
+	width: 100%;
+	height: max-content;
+	padding: 20px;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 30px;
+}
+.prestasiKecamatan h3 {
+	text-align: center;
+}
+.prestasiKecamatan ul {
+	padding-left: 20px;
+}
+.prestasiKecamatan ul li {
+	margin-top: 5px;
+}
+
+.prestasiKabupaten {
+	width: 100%;
+	padding: 20px;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	background-color: #fff;
+}
+.prestasiKabupaten h3 {
+	text-align: center;
+}
+.prestasiKabupaten ul {
+	padding-left: 20px;
+}
+.prestasiKabupaten ul li {
+	margin-top: 10px;
+}
+
+.gambar{
+	width: 250px;
+	height: 280px;
+	margin-left: 900px;
+}
+
+
+/*----PROFIL----*/
+
+.profil-title h2 {
+    text-align: center;
+	font-size: 3rem;
+    margin-top: 5rem;
+    text-transform: capitalize;
+	letter-spacing: var(--mainSpacing);
+  }
+
+
+
+/*----GALERY----*/
+.albumku {
+	margin-top: 60px;
+	padding: 30px 0px;
+}
+
+.album {
+	padding: 30px 0px;
+}
+
+.white {
+	background: #fff;
+	width: 100%;
+	height: auto;
+	box-shadow: 0px 0px 9px rgb(194, 194, 194);
+}
+
+/* --------------- ppdb page ---------------- */
+.ppdb {
+    height: calc(100vh - 80px);
+    background: url("img/ppdb.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 1rem;
+  }
+  .banner-title {
+	font-size: 1rem;
+	text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 1rem;
+  }
+
+  .daftar {
+	background-color: #009F9D;
+    border: 1px solid #009F9D;
+	padding: 16px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+	border-radius: 15px;
+	transition: var(--mainTransition);
+}
+
+.daftar:hover {
+    background: transparent;
+    color: #009F9D;
+    text-decoration: none;
+	
+}
+
+.selengkapnya {
+	background-color: #FF5959;
+	border: 1px solid #FF5959;
+	padding: 16px 32px;
+	margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+	border-radius: 15px;
+	transition: var(--mainTransition);
+}
+
+.selengkapnya:hover {
+    background: transparent;
+    color: #FF5959;
+	text-decoration: none;
+}
+  /* --------------- End of ppdb page ---------------- */
+
+/*----DAFTAR INFO PPDB----*/
+.datadiri {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.tulisandata{
+	text-align: center;
+}
+
+
+form#input-form {
+	width: 90vw;
+    margin: 0 auto;
+	max-width: 720px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0 0 7px 0px rgba(136, 146, 146, 0.2);
+	padding: 30px;
+}
+
+.subm{
+	float: right;
+	overflow: hidden;
+	margin-top: -30px;
+	/* margin-left: 50px; */
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	padding: 0px;
+	background: #FF4444 ;
+	box-shadow: 0px 0px 8px #FF4444;
+	color: #fff;
+	border: 1px solid #FF4444;
+	border-radius: 5px;
+	transition: var(--mainTransition);
+}
+
+.subm:hover{
+	color: #FF4444;
+	background: transparent;
+}
+
+#input-form .form-group {
+	width: 100%;
+	display: grid;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+#input-form .form-groupi {
+	width: 60%;
+	/*display: grid;*/
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+label.input-daftar {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+
+ input.input-daftar, select {
+	font-family: 'Helvetica', sans-serif;
+	padding: 0px 10px;
+	outline: none;
+	/* border-radius: 5px; */
+	border: none;
+	border-bottom : 1px solid #888;
+	/* margin-top: 5px; */
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+th, td {
+	text-align: center;
+}
+
+.input-skhun {
+	border: none;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+.table {
+	margin-bottom: 80px;
+}
+
+/*----SELENGKAPNYA----*/
+.syarat-wrapper {
+	margin: 0 auto;
+	width: 90vw;
+	max-width: 720px;
+	background: #0e97c2;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+}
+.heading {
+	background: #107ea0;
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+	padding-top: 1rem;
+}
+.heading h3 {
+	text-align: center;
+	color: #fff;
+	text-transform: capitalize;
+}
+.heading p {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-style: italic;
+}
+.syarat-content {
+	padding: 20px;
+	text-align: right;
+}
+.syarat-content p {
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize;
+}
+.syarat-content a {
+	background: #107ea0;
+    border: 1px solid #107ea0;
+	padding: 16px 32px;
+	margin-top: 20px;
+	margin-right: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+	border-radius: 15px;
+	transition: var(--mainTransition);
+}
+
+.syarat-content a:hover {
+    background: rgba(16, 126, 160, 0.5);
+    color: #fff;
+    text-decoration: none;
+	
+}
+
+/*----BERITA----*/
+
+.judul {
+	margin: 0 auto;
+	background: url("./img/judul1.png") center no-repeat;
+	height: 60px;
+	width: 100%;
+}
+
+.isianberita {
+	background: #34A7B2;
+	width: 100%;
+	min-height: 50vh;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+.imgleft {
+	z-index: 1;
+}
+.imgright {
+	z-index: 1;
+}
+
+.bulat {
+	width: 420px;
+	height: 100vh;
+}
+
+.gradient {
+	width: 715px;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.anim {
+	position: absolute;
+	right: 10px;
+	top: 11px;
+}
+
+.text {
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	width: 500px;
+	height: 200px;
+	z-index: 2;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.text-title {
+	color: #2350C4;
+	text-align: center;
+	font-weight: bold;
+}
+
+.hr-splash{
+	text-align: center;
+	width: 40%;
+	border: solid black 1px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.go {
+	position: absolute;
+	bottom: 180px;
+	left: 150px;
+	box-shadow:  20px 20px 60px #1674aa, -20px -20px 60px #08517c;
+	background: #036ca8;
+	width: 130px;
+	height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.go:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .txt-go {
+	  margin-right: 5px;
+  }
